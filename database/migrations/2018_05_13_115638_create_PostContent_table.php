@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateItemCaptionTable extends Migration
+class CreatePostContentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateItemCaptionTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('users', function (Blueprint $table) {
-         $table->increments('id');
-            $table->foreign('ItemId')->references('id')->on('items');
-            $table->id('type');
-            $table->string('content');
+        Schema::create('user', function (Blueprint $table) {
+            $table->increments('id');
             $table->timestamps();
-       });
+        $table->foreign('PostId')->references('id')->on('posts');
+        $table->string('type'); // 0 text , 1 image
+        $table->string('content');
+     
+        });
     }
 
     /**
@@ -30,6 +30,6 @@ class CreateItemCaptionTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user');
     }
 }

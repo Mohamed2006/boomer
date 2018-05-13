@@ -19,7 +19,7 @@ class CreateSearchHistoryTable extends Migration
           $table->foreign('UserId')->references('id')->on('users');
           $table->string('SearchQuery');
           $table->timestamps();
-      )};
+      });
     }
 
     /**

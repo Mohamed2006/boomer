@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
         $table->foreign('ItemId')->references('id')->on('items');
 
           $table->timestamps();
-      )};
+     });
     }
 
     /**

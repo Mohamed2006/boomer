@@ -17,11 +17,10 @@ class CreatePostsTable extends Migration
          Schema::create('users', function (Blueprint $table) {
        $table->increments('id');
         $table->foreign('UserId')->references('id')->on('users');
-        $table->foreign('ItemId')->references('id')->on('items');
         $table->string('comment');
         $table->foreign('TaggedUser')->references('id')->on('users');
          $table->timestamps();
-     )};
+      });
     }
 
     /**

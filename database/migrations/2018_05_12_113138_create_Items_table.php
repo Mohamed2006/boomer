@@ -22,7 +22,7 @@ class CreateItemsTable extends Migration
           $table->id('StockCount');
           $table->id('price');
           $table->id('type'); // 0 original, 1 is retweeted
-        )};
+        });
     }
 
     /**
