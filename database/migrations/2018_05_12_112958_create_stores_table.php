@@ -16,6 +16,7 @@ class CreateStoresTable extends Migration
         Schema::create('stores', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('UserId');
+            $table->foreign('UserId')->references('id')->on('users');
             $table->integer('ItemsCount');
             $table->timestamps();
         });

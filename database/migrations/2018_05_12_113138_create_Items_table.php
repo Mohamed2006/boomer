@@ -16,6 +16,8 @@ class CreateItemsTable extends Migration
         //
       Schema::create('Items', function (Blueprint $table) {
           $table->increments('id');
+          
+          $table->integer('UserId');
           $table->foreign('UserId')->references('id')->on('users');
           $table->timestamps();
           $table->string('name');
