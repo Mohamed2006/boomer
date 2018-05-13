@@ -14,7 +14,7 @@ class CreateSearchHistoryTable extends Migration
     public function up()
     {
         //
-    Schema::create('users', function (Blueprint $table) {
+    Schema::create('SearchHistory', function (Blueprint $table) {
          $table->increments('id');
           $table->foreign('UserId')->references('id')->on('users');
           $table->string('SearchQuery');

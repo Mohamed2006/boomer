@@ -14,7 +14,7 @@ class CreateItemCaptionTable extends Migration
     public function up()
     {
         //
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('ITemCapctions', function (Blueprint $table) {
          $table->increments('id');
             $table->foreign('ItemId')->references('id')->on('items');
             $table->integer('type');

@@ -13,7 +13,7 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
         $table->increments('id');
         $table->foreign('UserId')->references('id')->on('users');
         $table->foreign('ItemId')->references('id')->on('items');
