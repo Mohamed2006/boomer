@@ -18,8 +18,8 @@ class CreateLikesTable extends Migration
         $table->increments('id');
         $table->integer('UserId');
         $table->integer('ItemId');
-        $table->foreign('UserId')->references('id')->on('users');
-        $table->foreign('ItemId')->references('id')->on('items');
+     //   $table->foreign('UserId')->references('id')->on('users');
+       // $table->foreign('ItemId')->references('id')->on('items');
          $table->timestamps();
    });
     }

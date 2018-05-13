@@ -17,7 +17,7 @@ class CreateItemCaptionTable extends Migration
         Schema::create('ITemCapctions', function (Blueprint $table) {
          $table->increments('id');
             $table->integer('ItemId');
-            $table->foreign('ItemId')->references('id')->on('items');
+           // $table->foreign('ItemId')->references('id')->on('items');
             $table->integer('type');
             $table->string('content');
             $table->timestamps();

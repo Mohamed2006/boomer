@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration
           $table->increments('id');
           
           $table->integer('UserId');
-          $table->foreign('UserId')->references('id')->on('users');
+         // $table->foreign('UserId')->references('id')->on('users');
           $table->timestamps();
           $table->string('name');
           $table->integer('StockCount');

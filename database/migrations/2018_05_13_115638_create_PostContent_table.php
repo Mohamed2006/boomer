@@ -17,7 +17,7 @@ class CreatePostContentTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->integer('PostId');
-        $table->foreign('PostId')->references('id')->on('posts');
+     //   $table->foreign('PostId')->references('id')->on('posts');
         $table->string('type'); // 0 text , 1 image
         $table->string('content');
      

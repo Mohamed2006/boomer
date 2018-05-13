@@ -18,10 +18,10 @@ class CreateCommentsTable extends Migration
         $table->integer('UserId');
         $table->integer('ItemId');
         $table->integer('TaggedUser');
-        $table->foreign('UserId')->references('id')->on('users');
-        $table->foreign('ItemId')->references('id')->on('items');
+      //  $table->foreign('UserId')->references('id')->on('users');
+        //$table->foreign('ItemId')->references('id')->on('items');
         $table->string('comment');
-        $table->foreign('TaggedUser')->references('id')->on('users');
+        //$table->foreign('TaggedUser')->references('id')->on('users');
          $table->timestamps();
         });
     }

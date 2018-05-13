@@ -17,10 +17,10 @@ class CreatePostsTable extends Migration
          Schema::create('Posts', function (Blueprint $table) {
        $table->increments('id');
         $table->integer('UserId');
-        $table->foreign('UserId')->references('id')->on('users');
+       // $table->foreign('UserId')->references('id')->on('users');
         $table->string('comment');
-         $table->integer('TaggedUser')->nullable();
-        $table->foreign('TaggedUser')->references('id')->on('users');
+       //  $table->integer('TaggedUser')->nullable();
+        //$table->foreign('TaggedUser')->references('id')->on('users');
          $table->timestamps();
       });
     }
