@@ -19,9 +19,9 @@ class CreateItemsTable extends Migration
           $table->foreign('UserId')->references('id')->on('users');
           $table->timestamps();
           $table->string('name');
-          $table->id('StockCount');
-          $table->id('price');
-          $table->id('type'); // 0 original, 1 is retweeted
+          $table->integer('StockCount');
+          $table->integer('price');
+          $table->integer('type'); // 0 original, 1 is retweeted
         });
     }
 
