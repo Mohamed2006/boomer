@@ -21,7 +21,7 @@ class CreateTransactionsTable extends Migration
        // $table->foreign('UserId')->references('id')->on('users');
         //table->foreign('ItemId')->references('id')->on('items');
         $table->string('amount');
-        $table->sting('note')->nullable();
+        $table->string('note');
 
           $table->timestamps();
      });
