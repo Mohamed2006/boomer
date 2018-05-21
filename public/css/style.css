@@ -1,0 +1,17 @@
+.image-editor{
+
+	   text-align: center;
+}
+
+.small_avatar{
+ height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+    opacity: 1;
+    display: block;
+   
+    transition: .5s ease;
+    backface-visibility: hidden;
+}

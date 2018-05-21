@@ -18,11 +18,12 @@
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
-                margin: 0;
+                
             }
 
             .full-height {
                 height: 100vh;
+
             }
 
             .flex-center {
@@ -33,6 +34,7 @@
 
             .position-ref {
                 position: relative;
+                margin-bottom: -10%
             }
 
             .top-right {
@@ -51,7 +53,7 @@
 
             .links > a {
                 color: #636b6f;
-                padding: 0 25px;
+               
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -60,7 +62,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+               
             }
         </style>
     </head>
